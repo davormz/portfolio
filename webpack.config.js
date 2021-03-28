@@ -55,22 +55,21 @@ module.exports = {
             filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: 'assets/[name].[contenthash].css'
+            filename: 'assets/css/[name].[contenthash].css'
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'assets', 'images'),
+                    to: 'assets/images'
+                }
+                // ,
+                // {
+                //     from: path.resolve(__dirname, 'assets', 'icons'),
+                //     to: 'assets/icons'
+                // }
+            ]
         })
-        // ,
-        // new CopyWebpackPlugin({
-        //     patterns: [
-        //         {
-        //             from: path.resolve(__dirname, 'assets', 'images'),
-        //             to: 'assets/images'
-        //         }
-        //         // ,
-        //         // {
-        //         //     from: path.resolve(__dirname, 'assets', 'icons'),
-        //         //     to: 'assets/icons'
-        //         // }
-        //     ]
-        // })
         // ,
         // new BundleAnalyzerPlugin()
     ]

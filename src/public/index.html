@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <title>I'm David</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -16,8 +17,18 @@
     </script>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <img class="header__img" src="./assets/images/davo_icon.png">
+        <nav class="header__menu">
+            <div>
+                <p>Services</p>
+            </div>
+        </nav>
+
+        <nav class="header__menu">
+            <div>
+                <p>Menu</p>
+            </div>
             <ul>
                 <li><a>Portfolio</a></li>
                 <li><a>Experience</a></li>
@@ -25,47 +36,85 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h1> Hi, this is <strong>David</strong>, I'm a <strong>Software Engineer</strong> and this is my portfolio </h1>
-    </section>
-    <section>
-        <h2>Projects</h2>
-
-        <article>
-            <h3>Project Name: Assets Gallery</h3>
-            <h5>Technologies used:</h5>
-            <ul>
-                <li>HTML</li>
-                <li>JavaScript</li>
-                <li>CSS</li>
-                <li>SCSS</li>
+    <section class="hero">
+        <img class="avatar" src="./assets/images/avatar.jpg">
+        <h1> Hi, I'm <strong>David</strong>, And you have landed on my portafolio. 
+            <br>Feel free to explore.
+        </h1>
+        <footer>
+            <ul class="social">
+                <li></li>
             </ul>
-            HTML, JavaScript, CSS, SCSS
-            <p>
+        </footer>
+        
+    </section>
+    <h2>Projects</h2>
+    <section class="tiles">
+        <article class="tile">
+            <header>
+                <h3>Project Name: Assets Gallery</h3>
+            </header>
+                      
+            <p class="desc">
                 The assets gallery is a online store to sell virtual assets (images, videos or documents). This project started as a CSS layout practice.
             </p>
-            <p>
+            <div class="tech-list">
+                <h5>Technologies used:</h5>
+                <ul class="capsules">
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>SCSS</li>
+                </ul>
+            </div>  
+            <p class="landing">
                 <a href="./assets-gallery-project/index.html">Assets Gallery</a>
             </p>
         </article>
 
-        <article>
-            <h3>Project Name: Fight Gone Bad</h3>
-            <h5>Technologies Used:</h5>
-            Back-End and Web Version: MEAN stack
-            <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>Angular</li>
-                <li>Node.js</li>
-            </ul>
-            Mobile:
-            <ul>
-                <li>Kotlin</li>
-            </ul>
+        <article class="tile">
+            <header>
+                <h3>Project Name: Fight Gone Bad</h3>
+            </header>
+            
             <p>
                 This project started as an idea in the middle of the pandemic. 
             </p>
+
+            <div class="tech-list">
+                <h5>Technologies Used:</h5>
+                Back-End and Web Version: MEAN stack
+                <ul class="capsules"> 
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>Angular</li>
+                    <li>Node.js</li>
+                </ul>
+                Mobile:
+                <ul class="capsules">
+                    <li>Kotlin</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="tile">
+            <header>
+                <h3>Project Name: Project X</h3>
+            </header>
+            
+            <p>
+                This project started as an idea in the middle of the pandemic. 
+            </p>
+            <div class="tech-list">
+                <h5>Technologies Used:</h5>
+                Back-End and Web Version: MEAN stack
+                <ul class="capsules"> 
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>Angular</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
         </article>
     </section>
     <footer>
